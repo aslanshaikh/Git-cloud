@@ -11,21 +11,106 @@
     <style>
         body {
             font-family: 'Baloo Bhai 2', cursive;
+            
+
         }
-        .logo img{
+        p{
+            color: rgb(65, 116, 161);
+        }
+
+        .logo img {
             width: 62px;
             height: 47px;
+        }
+
+
+        .navbar {
+
+            border-radius: 30px;
+
+            background-color: rgb(63, 22, 47);
+
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 23px;
+
+        }
+
+        .navbar li a {
+            padding: 3px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover {
+            color: red;
+        }
+
+        .search {
+            float: right;
+
+
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 4px;
+
+        }
+
+        h1 {
+            display: inline-block;
+            
+            background-color: burlywood;
+            color: rgb(185, 92, 165);
+        }
+        header::before{
+            background: url('https://source.unsplash.com/random') no-repeat center center/cover;
+            content: "";
+            width: 100%;
+            position: absolute;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            opacity: 0.3;
         }
     </style>
 
 </head>
 
 <body>
-    <div class="logo">
-        <img src="hlogo.png" alt="">
-    </div>
-    <h1>welcome to my website </h1>
-    <p>hello guys this is aslan shaikh from goa engineering college  </p>
+
+    <header>
+        <div class="logo">
+            <img src="hlogo.png" alt="">
+        </div>
+        <h1>Welcome To My Portfolio - Aslan Shaikh</h1>
+        <hr>
+        <nav class="navbar">
+            <ul>
+
+                <li><a href="https://www.google.com" target="_blank">GOOGLE</a> </li>
+                <li><a href="achievements.html" target="_blank">ABOUT ME</a></li>
+                <li><a href="https://www.youtube.com" target="_blank">YOUTUBE </a></li>
+                
+
+            </ul>
+
+        </nav>
+    </header>
+
+
+
+    <!-- <h1></h1> -->
+    <p>hello guys this is aslan shaikh from goa engineering college </p>
     <p> <a href="achievements.html" target="_blank">click here to view my achievemnets </a> </p>
 </body>
 
