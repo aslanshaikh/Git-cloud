@@ -71,6 +71,30 @@
             font-size: 3rem;
             background-color: burlywood;
             color: rgb(185, 92, 165);
+            animation-name: aslan2;
+            animation-iteration-count: 1;
+            animation-duration: 2s;
+            animation-direction: reverse;
+            position: relative;
+        }
+        @keyframes aslan2 {
+            0%{
+                right: 0px;
+                left: 0px;
+
+            }
+            40%{
+                right: 700px;
+                left: 0px;
+            }
+            70%{
+                right: 700px;
+                left: 700px;
+            }
+            100%{
+                right: 0px;
+                left: 700px;
+            }
         }
         header::before{
             background: url('https://source.unsplash.com/random') no-repeat center center/cover;
@@ -87,6 +111,7 @@
         .first{
             color: rgb(55, 44, 75);
         }
+
 
 
     </style>

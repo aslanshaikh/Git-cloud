@@ -15,14 +15,68 @@
            
             width: 271px;
             height: 267px;
+           
             border: 2px solid rgb(230, 163, 76);
+
+            animation-name: aslan;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            position: relative;
+            
+
         }
+        
         p{
             font-family: 'Baloo Bhai 2';
         }
         h2{
             background-color: aqua;
             display: inline-block;
+            animation-name: aslan3;
+            animation-iteration-count: 1;
+            animation-duration: 5s;
+            animation-direction: reverse;
+            position: relative;
+
+        }
+        @keyframes aslan3 {
+            0%{
+                right: 0px;
+                left: 0px;
+
+            }
+            40%{
+                right: 700px;
+                left: 0px;
+            }
+            70%{
+                right: 700px;
+                left: 700px;
+            }
+            100%{
+                right: 0px;
+                left: 700px;
+            }
+        }
+
+        @keyframes aslan {
+            0%{
+                top: 0px;
+                left: 0px;
+
+            }
+            40%{
+                top: 250px;
+                left: 0px;
+            }
+            70%{
+                top: 250px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+            }
         }
 
         header::before{
